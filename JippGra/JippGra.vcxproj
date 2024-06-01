@@ -143,6 +143,7 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="gameWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="settingsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aimlab.hpp" />
