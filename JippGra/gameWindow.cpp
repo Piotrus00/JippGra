@@ -15,8 +15,8 @@ public:
 
 
 	Game() {
-		set_new_game();
 		radius = 20;
+		max_num_circles = 5;
 		circle.setRadius(radius);
 		circle.setFillColor(sf::Color::Red);
 		circle.setPosition(screenWidth / float(2) - 100, 750);
@@ -39,7 +39,7 @@ public:
 	}
 
 	bool is_end() {
-		return number_of_circles >= 5;
+		return number_of_circles >= max_num_circles;
 	}
 
 	void show_stats() {
@@ -71,6 +71,7 @@ public:
 	void set_new_game() {
 		points = 0;
 		number_of_circles = 0;
+		clock.restart();
 	}
 
 	bool time_measure() {
@@ -87,4 +88,5 @@ private:
 	sf::Time duration;
 	unsigned int screenWidth = sf::VideoMode::getDesktopMode().width;
 	unsigned int screenHeight = sf::VideoMode::getDesktopMode().height;
+	unsigned int max_num_circles;
 };
