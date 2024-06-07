@@ -37,7 +37,7 @@ public:
 	sf::RectangleShape rec_number_circles;
 	sf::Text radius;
 	sf::RectangleShape rec_radius;
-
+	
 
 
 	Settings() {
@@ -49,11 +49,7 @@ public:
 		radius_val = 20;
 		skin_num = 0;
 
-
 		set_widgets();
-
-
-		
 		
 		rectangle_sett_quit.setSize(sf::Vector2f(150, 100));
 		rectangle_sett_quit.setFillColor(sf::Color::Transparent);
@@ -64,57 +60,59 @@ public:
 		sett_quit.setPosition(screenWidth * (4.5f / 6), 1500);
 	}
 
-
-
-
 	void inc_radius() {
 		radius_val++;
 		radius.setString(std::to_string(radius_val));
 	}
 
 	void dec_radius() {
-		radius_val--;
+		if(radius_val > 1) radius_val--;
 		radius.setString(std::to_string(radius_val));
 	}
 
 	void inc_time() {
 		time_val += 50;
-		time.setString(std::to_string(time_val) + "ms");
+		time.setString(std::to_string(time_val));
 	}
 
 	void dec_time() {
-		time_val -= 50;
-		time.setString(std::to_string(time_val) + "ms");
+		if(time_val > 50)time_val -= 50;
+		time.setString(std::to_string(time_val));
 	}
 
 	void inc_num_circles() {
 		number_circles_val++;
-		radius.setString(std::to_string(number_circles_val));
+		number_circles.setString(std::to_string(number_circles_val));
 	}
 
 	void dec_num_circles() {
-		number_circles_val--;
-		radius.setString(std::to_string(number_circles_val));
+		if(number_circles_val > 1)number_circles_val--;
+		number_circles.setString(std::to_string(number_circles_val));
 	}
 
 	void next_skin() {
-		try {
-			skin_num++;
-			skin.setString(skins[skin_num]);
-		}
-		catch (int i) {
-			skin_num--;
-		}
+		skin_num++;
+		skin_num = skin_num % 2;
+		skin.setString(skins[skin_num]);
 	}
 
 	void prev_skin() {
-		try {
-			skin_num--;
-			skin.setString(skins[skin_num]);
-		}
-		catch (int i) {
-			skin_num++;
-		}
+		skin_num--;
+		skin_num = skin_num % 2;
+		skin.setString(skins[skin_num]);
+	}
+
+	unsigned int get_radius() {
+		return radius_val;
+	}
+	unsigned int get_number_circles() {
+		return number_circles_val;
+	}
+	unsigned int get_time() {
+		return time_val;
+	}
+	std::string get_skin() {
+		return skins[skin_num];
 	}
 
 
@@ -153,7 +151,7 @@ private:
 		//plus
 
 		plus_skin.setFont(font);
-		plus_skin.setString("+");
+		plus_skin.setString(">");
 		plus_skin.setCharacterSize(100);
 		plus_skin.setOrigin(plus_skin.getGlobalBounds().getSize() / 2.f + plus_skin.getLocalBounds().getPosition());
 		plus_skin.setPosition(rectangle_sett_skin_increase.getPosition() + (rectangle_sett_skin_increase.getSize() / 2.f));
@@ -161,7 +159,7 @@ private:
 		//minus
 
 		minus_skin.setFont(font);
-		minus_skin.setString("-");
+		minus_skin.setString("<");
 		minus_skin.setCharacterSize(100);
 		minus_skin.setOrigin(minus_skin.getGlobalBounds().getSize() / 2.f + minus_skin.getLocalBounds().getPosition());
 		minus_skin.setPosition(rectangle_sett_skin_reduce.getPosition() + (rectangle_sett_skin_reduce.getSize() / 2.f));
@@ -181,7 +179,7 @@ private:
 		//time
 
 
-		sett_time_selection.setString("Time");
+		sett_time_selection.setString("Time[ms]");
 		sett_time_selection.setFont(font);
 		sett_time_selection.setCharacterSize(50);
 		sett_time_selection.setPosition(300, 600);
@@ -228,7 +226,7 @@ private:
 		//circles
 
 
-		sett_number_of_points_selection.setString("Circles");
+		sett_number_of_points_selection.setString("Number Of Circles");
 		sett_number_of_points_selection.setFont(font);
 		sett_number_of_points_selection.setCharacterSize(50);
 		sett_number_of_points_selection.setPosition(300, 1000);

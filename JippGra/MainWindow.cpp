@@ -1,5 +1,6 @@
 #include<SFML/Graphics.hpp>
 #include "Aimlab.hpp"
+#include <windows.h>
 
 enum win_state
 {
@@ -47,6 +48,7 @@ public:
                 CRiMO(menu->rectangle_quit, menu->quit);
 
                 if (isclicked(menu->rectangle_play)) {
+                    game->apply_settings(settings->get_radius(), settings->get_number_circles(), settings->get_time(), settings->get_skin());
                     game->set_new_game();
 
                     winstate = wingame;
@@ -102,18 +104,21 @@ public:
                 window.draw(settings->rectangle_sett_skin_increase);
                 window.draw(settings->plus_skin);
                 window.draw(settings->minus_skin);
+                window.draw(settings->rec_skin);
                 window.draw(settings->skin);
 
                 window.draw(settings->rectangle_sett_time_increase);
                 window.draw(settings->rectangle_sett_time_reduce);
                 window.draw(settings->plus_time);
                 window.draw(settings->minus_time);
+                window.draw(settings->rec_time);
                 window.draw(settings->time);
 
                 window.draw(settings->rectangle_sett_number_of_points_increase);
                 window.draw(settings->rectangle_sett_number_of_points_reduce);
                 window.draw(settings->plus_number);
                 window.draw(settings->minus_number);
+                window.draw(settings->rec_number_circles);
                 window.draw(settings->number_circles);
 
 
@@ -121,6 +126,7 @@ public:
                 window.draw(settings->rectangle_sett_radius_reduce);
                 window.draw(settings->plus_radius);
                 window.draw(settings->minus_radius);
+                window.draw(settings->rec_radius);
                 window.draw(settings->radius);
 
 
@@ -130,36 +136,56 @@ public:
 
                 if (isclicked(settings->rectangle_sett_radius_increase)) {
                     settings->inc_radius();
+                    Sleep(200);
+                    break;
                 }
                 if (isclicked(settings->rectangle_sett_radius_reduce)) {
                     settings->dec_radius();
+                    Sleep(200);
+                    break;
                 }
                 
 
 
                 if (isclicked(settings->rectangle_sett_time_increase)) {
                     settings->inc_time();
+                    Sleep(200);
+                    break;
                 }
                 if (isclicked(settings->rectangle_sett_time_reduce)) {
                     settings->dec_time();
+                    Sleep(200);
+                    break;
                 }
 
 
 
                 if (isclicked(settings->rectangle_sett_number_of_points_increase)) {
                     settings->inc_num_circles();
+                    Sleep(200);
+
+                    break;
                 }
                 if (isclicked(settings->rectangle_sett_number_of_points_reduce)) {
                     settings->dec_num_circles();
+                    Sleep(200);
+
+                    break;
                 }
 
 
 
                 if (isclicked(settings->rectangle_sett_skin_increase)) {
                     settings->next_skin();
+                    Sleep(200);
+
+                    break;
                 }
                 if (isclicked(settings->rectangle_sett_skin_reduce)) {
                     settings->prev_skin();
+                    Sleep(200);
+
+                    break;
                 }
 
 

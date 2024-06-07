@@ -5,7 +5,6 @@
 class Game {
 
 public:
-
 	sf::Text end_title;
 	sf::Text end_try_again;
 	sf::CircleShape circle;
@@ -18,9 +17,22 @@ public:
 		radius = 20;
 		max_num_circles = 5;
 		circle.setRadius(radius);
-		circle.setFillColor(sf::Color::Red);
 		circle.setPosition(screenWidth / float(2) - 100, 750);
 		duration = sf::milliseconds(2000);
+	}
+
+	void apply_settings(unsigned int new_radius, unsigned int new_number_circles, unsigned int new_time, std::string new_skin) {
+		radius = new_radius;
+		circle.setRadius(radius);
+		max_num_circles = new_number_circles;
+		duration = sf::milliseconds(new_time);
+		if (texture.loadFromFile("C:/Users/dudcz/source/repos/JippGra/JippGra/" + new_skin + ".png")) {
+			circle.setTexture(&texture, true);
+			circle.setTextureRect(sf::IntRect(0,0,600,600));
+		}
+		else {
+			circle.setFillColor(sf::Color::Green);
+		}
 	}
 
 
@@ -30,7 +42,6 @@ public:
 
 
 	void rand_position() {
-
 		std::uniform_int_distribution<int> cord_x(2*radius, screenWidth - 2*radius);
 		std::uniform_int_distribution<int> cord_y(2*radius, screenHeight - 2*radius);
 		circle.setPosition(cord_x(seed), cord_y(seed));
@@ -78,6 +89,9 @@ public:
 		return clock.getElapsedTime() > duration;
 	}
 
+
+
+
 private:
 	sf::Font font;
 	unsigned int radius;
@@ -86,6 +100,7 @@ private:
 	unsigned int number_of_circles;
 	sf::Clock clock;
 	sf::Time duration;
+	sf::Texture texture;
 	unsigned int screenWidth = sf::VideoMode::getDesktopMode().width;
 	unsigned int screenHeight = sf::VideoMode::getDesktopMode().height;
 	unsigned int max_num_circles;

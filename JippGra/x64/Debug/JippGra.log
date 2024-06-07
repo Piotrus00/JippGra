@@ -1,10 +1,9 @@
 ﻿  MainWindow.cpp
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(20,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(105,14): warning C4101: 'i': unreferenced local variable
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(115,14): warning C4101: 'i': unreferenced local variable
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(26,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=float
@@ -13,7 +12,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,142): warning C42
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=float
@@ -22,7 +21,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,107): warning C42
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -31,7 +30,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,76): warning C424
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -42,16 +41,16 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,49): warning C424
           ]
   Menu.cpp
   gameWindow.cpp
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(20,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(26,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   main.cpp
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(20,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(36,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(105,14): warning C4101: 'i': unreferenced local variable
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(115,14): warning C4101: 'i': unreferenced local variable
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(26,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(47,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=float
@@ -60,7 +59,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,142): warning C42
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=float
@@ -69,7 +68,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,107): warning C42
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -78,7 +77,7 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,76): warning C424
           [
               T=int
           ]
-C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(266,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
           with
           [
               T=float
@@ -88,7 +87,5 @@ C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(240,49): warning C424
               T=int
           ]
   settingsWindow.cpp
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(105,14): warning C4101: 'i': unreferenced local variable
-C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(115,14): warning C4101: 'i': unreferenced local variable
   Generating Code...
   JippGra.vcxproj -> C:\Users\dudcz\source\repos\JippGra\x64\Debug\JippGra.exe
