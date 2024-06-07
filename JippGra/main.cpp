@@ -1,8 +1,8 @@
-#include "Menu.cpp"
+#include "MainWindow.cpp"
 
 int main()
 {
-    Menu lobby;
+    Window lobby;
     lobby.start();
     return 0;
 }

@@ -15,7 +15,6 @@ public:
 
 
 	Game() {
-		set_new_game();
 		radius = 20;
 		circle.setRadius(radius);
 		circle.setFillColor(sf::Color::Red);

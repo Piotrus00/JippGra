@@ -1,2 +1,94 @@
-﻿  settingsWindow.cpp
+﻿  MainWindow.cpp
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(173,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(177,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  Menu.cpp
+  gameWindow.cpp
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(19,20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\gameWindow.cpp(35,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(173,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(177,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,142): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,76): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\dudcz\source\repos\JippGra\JippGra\MainWindow.cpp(184,49): warning C4244: 'argument': conversion from 'const T' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=int
+          ]
+  settingsWindow.cpp
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(173,47): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\dudcz\source\repos\JippGra\JippGra\settingsWindow.cpp(177,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
   JippGra.vcxproj -> C:\Users\dudcz\source\repos\JippGra\x64\Debug\JippGra.exe
